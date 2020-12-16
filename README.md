@@ -75,13 +75,6 @@ For example (see [example](https://github.com/xinxingwu-uk/FAE_fs/tree/main/Exam
     <img src="./images/loss.gif" width="666"/> 
  </center>
  
- 
- #### Feature selection
-
-<center >
-    <img src="./images/allkeyfeatures.gif" width="444"/> 
- </center>
- 
    
 #### Key features for MNIST
 
