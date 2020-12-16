@@ -3,7 +3,7 @@
 
 > Feature selection reduces the dimensionality of data by identifying a subset of the most informative features. In this paper, we propose an innovative framework for unsupervised feature selection, called fractal autoencoders (FAE). It trains a neural network to pinpoint informative features for global exploring of representability and for local excavating of diversity. Architecturally, FAE extends autoencoders by adding a one-to-one scoring layer and a small sub-neural network for feature selection in an unsupervised fashion. With such a concise architecture, FAE achieves state-of-the-art performances; extensive experimental results on fourteen datasets, including very high-dimensional data, have demonstrated the superiority of FAE over existing contemporary methods for unsupervised feature selection. In particular, FAE exhibits substantial advantages on gene expression data exploration, reducing measurement cost by about 15% over the widely used L1000 landmark genes. Further, we show that the FAE framework is easily extensible with an application.
 
-The experiments in the paper can be found [here](https://github.com/xinxingwu-uk/FAE_fs/tree/main/Experiments)
+The experiments in the paper can be found [here](https://github.com/xinxingwu-uk/FAE_fs/tree/main/Experiments).
 
 ## Model
 
@@ -69,10 +69,19 @@ For example (see [example](https://github.com/xinxingwu-uk/FAE_fs/tree/main/Exam
 
 ![](./images/testingdata.png)
 
-#### Loss function and feature selection
+#### Loss function
 
-<center class="half">
-    <img src="./images/loss.gif" width="300"/><img src="./images/allkeyfeatures.gif" width="200"/> </center>
+<center >
+    <img src="./images/loss.gif" width="666"/> 
+ </center>
+ 
+ 
+ #### Feature selection
+
+<center >
+    <img src="./images/allkeyfeatures.gif" width="444"/> 
+ </center>
+ 
    
 #### Key features for MNIST
 
