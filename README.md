@@ -3,12 +3,13 @@
 
 > Feature selection reduces the dimensionality of data by identifying a subset of the most informative features. In this paper, we propose an innovative framework for unsupervised feature selection, called fractal autoencoders (FAE). It trains a neural network to pinpoint informative features for global exploring of representability and for local excavating of diversity. Architecturally, FAE extends autoencoders by adding a one-to-one scoring layer and a small sub-neural network for feature selection in an unsupervised fashion. With such a concise architecture, FAE achieves state-of-the-art performances; extensive experimental results on fourteen datasets, including very high-dimensional data, have demonstrated the superiority of FAE over existing contemporary methods for unsupervised feature selection. In particular, FAE exhibits substantial advantages on gene expression data exploration, reducing measurement cost by about 15% over the widely used L1000 landmark genes. Further, we show that the FAE framework is easily extensible with an application.
 
-The experiments in the paper can be found [here](https://github.com/)
+The experiments in the paper can be found [here](https://github.com/xinxingwu-uk/FAE_fs/tree/main/Experiments)
 
 ## Model
 
-
-![](./images/model.png)
+<center >
+    <img src="./images/model.png" width="666"/> 
+ </center>
 
 Feature selection layer
 
@@ -48,16 +49,13 @@ class Feature_Select_Layer(Layer):
 ```sh
 input_img = Input(shape=(p_data_feature,), name='autoencoder_input')
 
-feature_selection = Feature_Select_Layer(output_dim=p_data_feature,\
-												l1_lambda=p_l1_lambda,\
-												input_shape=(p_data_feature,),\
-												name='feature_selection')
+feature_selection = Feature_Select_Layer(output_dim=p_data_feature,l1_lambda=p_l1_lambda,input_shape=(p_data_feature,),name='feature_selection')
 												
 feature_selection_score=feature_selection(input_img)
 feature_selection_choose=feature_selection(input_img,selection=True,k=p_feture_number)
 ```
 
-For example (see [example](https://github.com/))
+For example (see [example](https://github.com/xinxingwu-uk/FAE_fs/tree/main/Example))
 
 ![](./images/FAE.png)
 
@@ -74,7 +72,7 @@ For example (see [example](https://github.com/))
 #### Loss function and feature selection
 
 <center class="half">
-    <img src="./images/loss.gif" width="400"/> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/allkeyfeatures.gif" width="270"/> </center>
+    <img src="./images/loss.gif" width="300"/>&nbsp;&nbsp;<img src="./images/allkeyfeatures.gif" width="200"/> </center>
    
 #### Key features for MNIST
 
@@ -94,10 +92,10 @@ For example (see [example](https://github.com/))
 * 0.0.2
     * CHANGE: Update README.md
 * 0.0.1
-    * ADD: Model and Experiments
+    * ADD: Model, Examples, and Experiments
 
 ## Contacts
 
 Xinxing Wu, Qiang Cheng – Qiang.Cheng@uky.edu
 
-Distributed under the MIT license. See [``LICENSE``](https://github.com/) for more information.
+Distributed under the MIT license. See [``LICENSE``](https://github.com/xinxingwu-uk/FAE_fs/blob/main/LICENSE) for more information.
