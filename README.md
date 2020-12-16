@@ -72,7 +72,7 @@ For example (see [example](https://github.com/xinxingwu-uk/FAE_fs/tree/main/Exam
 #### Loss function and feature selection
 
 <center class="half">
-    <img src="./images/loss.gif" width="300"/>&nbsp;&nbsp;<img src="./images/allkeyfeatures.gif" width="200"/> </center>
+    <img src="./images/loss.gif" width="300"/><img src="./images/allkeyfeatures.gif" width="200"/> </center>
    
 #### Key features for MNIST
 
