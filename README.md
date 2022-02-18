@@ -88,7 +88,13 @@ For example (see [example](https://github.com/xinxingwu-uk/FAE_fs/tree/main/Exam
  
 ![](./images/markedkeyfeatures.gif)
 
+---
 
+## How to Cite
+
+---
+
+Wu, X., & Cheng, Q. (2021). Fractal Autoencoders for Feature Selection. Proceedings of the AAAI Conference on Artificial Intelligence, 35(12), 10370-10378. Retrieved from https://ojs.aaai.org/index.php/AAAI/article/view/17242
   
 ## Release History
 
